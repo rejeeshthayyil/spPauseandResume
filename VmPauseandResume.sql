@@ -4,8 +4,8 @@
 SELECT
     ds.StudioName,
     di.issueName AS [Shoot Start Status],
-    SUM(CASE WHEN st.ShootTimeName = 'AM' THEN DATEDIFF(MINUTE, fs.ShootPausedDateTime, fs.shootresumedatetime) ELSE 0 END) AS TimeLostAM,
-    SUM(CASE WHEN st.ShootTimeName = 'PM' THEN DATEDIFF(MINUTE, fs.ShootPausedDateTime, fs.shootresumedatetime) ELSE 0 END) AS TimeLostPM,
+    SUM(CASE WHEN st.ShootTimeName = 'AM' THEN DATEDIFF(MINUTE, fs.ShootPausedDateTime, fs.shootresumedatetime) ELSE 0 END) AS TimeLost_AM,
+    SUM(CASE WHEN st.ShootTimeName = 'PM' THEN DATEDIFF(MINUTE, fs.ShootPausedDateTime, fs.shootresumedatetime) ELSE 0 END) AS TimeLost_PM,
     fs.ShootPausedDateTime,
     fs.ShootResumeDateTime
 FROM
