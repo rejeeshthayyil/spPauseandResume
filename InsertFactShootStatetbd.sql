@@ -59,28 +59,31 @@ VALUES
 
 --(1000242, 2, 57, 2, 31072023, 102, 2, 1, '2023-07-31 09:30:00', 6, 'Fire alarm', 'Fire alar 6', 4, 0, Null, '2023-07-31 10:30:00', '2023-07-31 09:30:00', '2023-07-31 13:30:00', '2023-07-31 17:30:00', 2, '2023-07-31 10:30:00')
 
-(1000242, 2, 57, 2, 31072023, 102, 2, 1, '2023-07-31 09:30:00', 3, 'Tech Issue', 'Tech Issue 6', 4, 0, Null, '2023-07-31 11:00:00', '2023-07-31 09:30:00', '2023-07-31 13:30:00', '2023-07-31 17:30:00', 2, '2023-07-31 11:00:00')
+--(1000242, 2, 57, 2, 31072023, 102, 2, 1, '2023-07-31 09:30:00', 3, 'Tech Issue', 'Tech Issue 6', 4, 0, Null, '2023-07-31 09:30:00', Null, '2023-07-31 09:30:00', '2023-07-31 13:45:00', 2, '2023-07-31 17:00:00')
 
---CORRid  SI  ET ST	  SDID    STU,  STY ISSHO,  SHOOTSTARDATE,    ISSUID,   REASON,       COMMENTS,         UID, ISRES,     SHOOPAUsed date,         SHOOTRESUME,		        EXPEMORNSTART,	     EXPECTAFTERST,            EXPECTEDEVEST,     EVENTTIMESTAMP,  LASTUPDATEDTIMESTAMP
+
+--CORRid  SI  ET STIME, SDID    STU,  STY ISSHO,  SHOOTSTARDATE,    ISSUID,   REASON,       COMMENTS,         UID, ISRES,     SHOOPAUsed date,         SHOOTRESUME,		        EXPEMORNSTART,	     EXPECTAFTERST,            EXPECTEDEVEST,     EVENTTIMESTAMP,  LASTUPDATEDTIMESTAMP
 --(1000243, 3, 57, 2, 31072023, 4,   2, 0,     '2023-07-31 09:30:00', 3,   'Tech Issue',  'Tech Issue 3',   4,    0,     '2023-07-31 09:30:00',         Null,			    '2023-07-31 09:30:00', '2023-07-31 13:45:00', '2023-07-31 17:00:00',     2,            '2023-07-31 17:00:00')
 --(1000244, 3, 57, 2, 31072023, 4,   2, 0,     '2023-07-31 09:30:00', 2,   'Model Issue', 'Model Issue 2',  4,    0,     '2023-07-31 09:45:00',           Null,			    '2023-07-31 09:30:00', '2023-07-31 13:45:00', '2023-07-31 17:00:00',     2,            '2023-07-31 17:00:00')
 --(1000245, 3, 57, 2, 31072023, 4,   2, 0,     '2023-07-31 09:30:00', 3,   'Tech Issue',  'Tech Issue 3',   4,    1,     '2023-07-31 09:30:00',    '2023-07-31 10:00:00',   '2023-07-31 09:30:00', '2023-07-31 13:45:00', '2023-07-31 17:00:00',     2,            '2023-07-31 17:00:00')
-  (1000246, 3, 57, 2, 31072023, 4,   2, 1,     '2023-07-31 09:30:00', 2,   'Model Issue', 'Model Issue 2',  4,    1,     '2023-07-31 09:45:00',    '2023-07-31 11:00:00',	'2023-07-31 09:30:00', '2023-07-31 13:45:00', '2023-07-31 17:00:00',     2,            '2023-07-31 11:00:00')
+--(1000246, 3, 57, 2, 31072023, 4,   2, 1,     '2023-07-31 09:30:00', 2,   'Model Issue', 'Model Issue 2',  4,    1,     '2023-07-31 09:45:00',    '2023-07-31 11:00:00',	'2023-07-31 09:30:00', '2023-07-31 13:45:00', '2023-07-31 17:00:00',     2,            '2023-07-31 11:00:00')
+
+ --(1000247, 3, 57, 5, 31072023, 4,   2, 1,     '2023-07-31 09:30:00', 3,   'Tech Issue',  'Tech Issue 3',   4,    0,     '2023-07-31 13:00:00',      NULL,					'2023-07-31 09:30:00', '2023-07-31 13:45:00', '2023-07-31 17:00:00',	 2,			   '2023-07-31 13:00:00'),
+ --(1000248, 3, 58, 5, 31072023, 4,   2, 1,     '2023-07-31 09:30:00', 3,   'Tech Issue',  'Tech Issue 3',   4,    1,     '2023-07-31 13:00:00',    '2023-07-31 14:30:00',	'2023-07-31 09:30:00', '2023-07-31 13:45:00', '2023-07-31 17:00:00',     2,            '2023-07-31 14:30:00')
+
+ 
+ (1000249, 3, 57, 5, 31072023, 10,   2, 1,     '2023-07-31 09:30:00', 3,   'Tech Issue',  'Tech Issue 3',   4,    0,     '2023-07-31 13:30:00',      NULL,					'2023-07-31 09:30:00', '2023-07-31 13:45:00', '2023-07-31 17:00:00',	 2,			   '2023-07-31 13:30:00'),
+ (1000250, 3, 58, 5, 31072023, 10,   2, 1,     '2023-07-31 09:30:00', 3,   'Tech Issue',  'Tech Issue 3',   4,    1,     '2023-07-31 13:30:00',    '2023-07-31 14:30:00',	'2023-07-31 09:30:00', '2023-07-31 13:45:00', '2023-07-31 17:00:00',     2,            '2023-07-31 14:30:00')
 
 
 
 
-
-
-
-
-	
 select * from Report.FactShootStatetbd
 
 
 
-delete report.factShootstatetbd
-where factshootstateid=7
+ Delete report.factShootstatetbd
+where factshootstateid=28
 
 	--EVENTS				ISSUE
 55 shoottimingset		1 Model Lateness
@@ -98,13 +101,12 @@ update Report.FactShootStatetbd
 set ShootTimeId= 7
 where factshootstateid =8
 
-update Report.FactShootStatetbd
-set ShootPausedDateTime= '2023-07-31 13:30:00.000'
-where factshootstateid=13
+delete Report.FactShootStatetbd
+where factshootstateid=24
 
 update Report.FactShootStatetbd
-set ExpectedEveningstarttime= '2023-07-31 17:30:00'
-where EventTypeId= 56
+set shootResumeDateTime=Null
+where FactShootStateId= 19
 
 SELECT fs.StudioId,ds.issueName,st.ShootTimeName,
     fs.ShootPausedDateTime,
@@ -116,3 +118,12 @@ FROM
 	on fs.IssuedId=ds.issueId
 	join Report.DimShootTime st 
 	on st.ShootTimeId=fs.shoottimeId
+
+
+	--if the first puase started at 9:30 second pause started at 9:45 
+	--then first puse resumed at 10:00 second pause resumed at 11:00
+	--1:30 
+	-- Time lost = substract first puase time from 2nd Resume Time
+	--in the above case 9:30 - 11:00
+
+(1000243, 3, 57, 2, 31072023, 'GLH4', 2, 0, '2023-07-31 09:30:00', 3, 'Tech Issue', 'Tech Issue 6', 4, 0, Null, '2023-07-31 09:30:00', Null, '2023-07-31 09:30:00', '2023-07-31 13:45:00', 2, '2023-07-31 17:00:00')
