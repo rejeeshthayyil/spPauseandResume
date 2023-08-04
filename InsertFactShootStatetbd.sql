@@ -123,6 +123,9 @@ FROM
 	--if the first puase started at 9:30 second pause started at 9:45 
 	--then first puse resumed at 10:00 second pause resumed at 11:00
 	--1:30 
+	-- first paused at 12:00 second paused at 12:15 and second resumed at 12:30
+	--and first resumed at 13:00
+
 	-- Time lost = substract first puase time from 2nd Resume Time
 	--in the above case 9:30 - 11:00
 
