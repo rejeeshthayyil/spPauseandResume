@@ -1,0 +1,27 @@
+SELECT TOP (1000) [FactShootStateId]
+      ,[correlationId]
+      ,[ShootStateId]
+      ,[EventTypeId]
+      ,[ShootTimeId]
+      ,[ShootDateId]
+      ,[StudioId]
+      ,[ShootTypeId]
+      ,[Isshootstarted]
+      ,[ShootStartedDateTime]
+      ,[IssuedId]
+      ,[Reason]
+      ,[Comments]
+      ,[UserId]
+      ,[IsissueResolved]
+      ,[ShootPausedDateTime]
+      ,[ShootResumeDateTime]
+      ,[ExpectedMorningstartTime]
+      ,[ExpectedAfternoonStarttime]
+      ,[ExpectedEveningStarttime]
+      ,[EventTimeStamp]
+      ,[LastUpdatedTimeStamp]
+  FROM [Manufacturing].[Report].[FactShootStatetbd]
+
+  UPDATE Report.FactShootStatetbd
+  set StudioId=3
+  where FactShootStateId=25
