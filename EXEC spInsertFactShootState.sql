@@ -1,4 +1,4 @@
-
+https://www.sciencedirect.com/topics/computer-science/cloud-deployment-model#:~:text=NIST%20defines%20four%20cloud%20deployment,has%20control%20over%20that%20infrastructure.
 
 
 
