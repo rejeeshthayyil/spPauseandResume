@@ -2,7 +2,7 @@ https://www.sciencedirect.com/topics/computer-science/cloud-deployment-model#:~:
 
 
 
-
+https://chat.openai.com/share/67502daa-534c-48e8-916e-871d42a6e53a
 
 
 
