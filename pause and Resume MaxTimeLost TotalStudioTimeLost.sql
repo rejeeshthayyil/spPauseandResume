@@ -101,8 +101,8 @@ StudioLevel AS (
         [Studio Name], 
 		[DAY],
 		[ShootStartStatus],
-        ISNULL(SUM(TimeLostAM), 0) AS TotalTimeLostAM, 
-        ISNULL(SUM(TimeLostPM), 0) AS TotalTimeLostPM,
+        ISNULL(SUM(TimeLostAM), 0) AS HighestTimeLostAM, 
+        ISNULL(SUM(TimeLostPM), 0) AS HighestTimeLostPM,
         ISNULL(SUM(TimeLostAM), 0) + ISNULL(SUM(TimeLostPM), 0) AS CombinedTimeLost
     FROM 
         Studios
@@ -114,10 +114,10 @@ RankedStatus AS (
         [Studio Name],
         [DAY],
         [ShootStartStatus],
-        TotalTimeLostAM,
-        TotalTimeLostPM,
-        SUM(TotalTimeLostAM) OVER(PARTITION BY [Studio Name]) AS StudioTotalTimeLostAM,
-        SUM(TotalTimeLostPM) OVER(PARTITION BY [Studio Name]) AS StudioTotalTimeLostPM,
+        HighestTimeLostAM,
+        HighestTimeLostPM,
+        SUM(HighestTimeLostAM) OVER(PARTITION BY [Studio Name]) AS TotalTimeLostAM,
+        SUM(HighestTimeLostPM) OVER(PARTITION BY [Studio Name]) AS TotalTimeLostPM,
         ROW_NUMBER() OVER(PARTITION BY [Studio Name] ORDER BY CombinedTimeLost DESC) AS rn
     FROM 
         StudioLevel
@@ -126,10 +126,10 @@ SELECT
     [Studio Name],
     [DAY],
     [ShootStartStatus],
+    HighestTimeLostAM,
+    HighestTimeLostPM,
     TotalTimeLostAM,
-    TotalTimeLostPM,
-    StudioTotalTimeLostAM,
-    StudioTotalTimeLostPM
+    TotalTimeLostPM
 FROM 
     RankedStatus
 WHERE
